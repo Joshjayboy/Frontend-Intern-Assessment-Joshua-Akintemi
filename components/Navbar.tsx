@@ -14,7 +14,7 @@ const links = [
   { label: "Book a Consultation", dropdown: false },
 ];
 
-function ChevronDown() {
+function ChevronDown({ className }: { className?: string }) {
   return (
     <svg
       width="14"
@@ -24,6 +24,7 @@ function ChevronDown() {
       stroke="currentColor"
       strokeWidth="2"
       strokeLinecap="round"
+      className={className}
     >
       <path d="M6 9l6 6 6-6" />
     </svg>
@@ -43,10 +44,10 @@ export function Navbar() {
             width={120}
             height={40}
             className="h-10 w-auto"
-          />{" "}
+          />
         </a>
 
-        <div className="hidden lg:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-[24px]">
           <a
             href="#"
             className="inline-flex items-center gap-2 rounded-md bg-brand-plum px-4 py-2 text-sm font-medium text-white hover:bg-brand-plum-deep transition-colors"
@@ -73,12 +74,12 @@ export function Navbar() {
               </svg>
             </span>
             Account
-            <ChevronDown />
+            <ChevronDown className="text-[#DDD0DA]" />
           </a>
 
           <a
             href="#"
-            className="inline-flex items-center rounded-xs bg-brand-red px-5 py-2 text-sm font-medium text-white hover:opacity-90 transition-opacity"
+            className="inline-flex items-center rounded-md bg-brand-red px-5 py-[10.5px] text-sm font-medium text-white hover:opacity-90 transition-opacity"
           >
             Take Assessment
           </a>
@@ -112,14 +113,14 @@ export function Navbar() {
             <a
               key={label}
               href="#"
-              className={`inline-flex items-center gap-1 text-sm text-foreground/80 hover:text-brand-plum transition-colors py-1 ${
+              className={`inline-flex items-center gap-1 text-sm text-[#151515] hover:text-brand-plum transition-colors py-1 ${
                 label === "About"
-                  ? "border-b-2 border-brand-plum text-brand-plum font-medium"
+                  ? "border-b-2 border-[#571244] text-[#571244] font-medium"
                   : ""
               }`}
             >
               {label}
-              {dropdown && <ChevronDown />}
+              {dropdown && <ChevronDown className="text-[#571244]" />}
             </a>
           ))}
         </nav>
