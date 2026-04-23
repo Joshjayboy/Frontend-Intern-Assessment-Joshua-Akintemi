@@ -26,6 +26,7 @@
   --color-brand-accent: var(--brand-accent);
   --color-brand-red: var(--brand-red);
   --color-lms-bg: var(--lms-bg);
+  --font-sans: var(--font-nunito-sans);
 }
 
 @media (prefers-color-scheme: dark) {
