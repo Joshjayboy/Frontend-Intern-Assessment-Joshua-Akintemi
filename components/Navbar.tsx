@@ -107,7 +107,7 @@ export function Navbar() {
         </button>
       </div>
 
-      <div className="hidden lg:block border-t border-brand-pink-soft">
+      <div className="hidden lg:block border-t border-[#DDD0DA] py-2">
         <nav className="mx-auto flex max-w-7xl items-center justify-center gap-6 px-4 py-2 md:px-8">
           {links.map(({ label, dropdown }) => (
             <a
