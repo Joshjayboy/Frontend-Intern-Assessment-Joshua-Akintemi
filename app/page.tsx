@@ -4,6 +4,7 @@ import { LMS } from "@/components/LMS";
 import { CorporateTrainings } from "@/components/CorporateTrainings";
 import { IndividualTraining } from "@/components/IndividualTraining";
 import { CapacityDevelopment } from "@/components/CapacityDevelopment";
+import { ManagementDevelopment } from "@/components/ManagementDevelopment";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <CorporateTrainings />
       <IndividualTraining />
       <CapacityDevelopment />
+      <ManagementDevelopment />
     </main>
   );
 }
