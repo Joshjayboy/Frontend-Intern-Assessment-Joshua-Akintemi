@@ -7,6 +7,7 @@ import { CapacityDevelopment } from "@/components/CapacityDevelopment";
 import { ManagementDevelopment } from "@/components/ManagementDevelopment";
 import { TransformationHub } from "@/components/TransformationHub";
 import { TrainingConsultant } from "@/components/TrainingConsultant";
+import { ConsultationCTA } from "@/components/ConsultationCTA";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ManagementDevelopment />
       <TransformationHub />
       <TrainingConsultant />
+      <ConsultationCTA />
     </main>
   );
 }
