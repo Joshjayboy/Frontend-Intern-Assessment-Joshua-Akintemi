@@ -5,6 +5,7 @@ import { CorporateTrainings } from "@/components/CorporateTrainings";
 import { IndividualTraining } from "@/components/IndividualTraining";
 import { CapacityDevelopment } from "@/components/CapacityDevelopment";
 import { ManagementDevelopment } from "@/components/ManagementDevelopment";
+import { TransformationHub } from "@/components/TransformationHub";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <IndividualTraining />
       <CapacityDevelopment />
       <ManagementDevelopment />
+      <TransformationHub />
     </main>
   );
 }
