@@ -30,13 +30,12 @@ const testimonials = [
   },
 ];
 
-const CARD_WIDTH = 320; // card width + gap
+const CARD_WIDTH = 320;
 
 export function Testimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [index, setIndex] = useState(0);
 
-  // Duplicate cards for infinite loop effect
   const looped = [...testimonials, ...testimonials];
 
   const scroll = (direction: "left" | "right") => {
@@ -45,7 +44,6 @@ export function Testimonials() {
 
     let next = direction === "right" ? index + 1 : index - 1;
 
-    // Silent reset to create infinite loop illusion
     if (next >= testimonials.length) {
       el.scrollTo({ left: 0, behavior: "instant" });
       next = 1;
@@ -62,9 +60,9 @@ export function Testimonials() {
   };
 
   return (
-    <section className="py-16 px-4 bg-[#f9f9f9]">
-      <div className="mx-auto max-w-6xl flex flex-col gap-10">
-        <h2 className="text-2xl md:text-3xl font-semibold text-foreground text-center">
+    <section className="py-16 bg-[#f9f9f9]">
+      <div className="mx-auto max-w-7xl px-4 md:px-8 flex flex-col gap-10">
+        <h2 className="font-nunito text-2xl md:text-3xl font-bold text-foreground text-center">
           Testimonials
         </h2>
 
@@ -89,52 +87,17 @@ export function Testimonials() {
                   <p className="text-sm font-semibold text-foreground">
                     {t.name}
                   </p>
-                  <p className="text-xs text-foreground/60">{t.role}</p>
+                  <p className="font-nunito-sans font-[400] text-xs leading-[150%] tracking-[0%] text-[#696969]">
+                    {t.role}
+                  </p>
                 </div>
               </div>
-              <p className="text-sm text-foreground/70 leading-relaxed">
+              <p className="font-nunito-sans font-[400] text-sm leading-[150%] tracking-[0%] text-[#151515]">
                 {t.text}
               </p>
             </div>
           ))}
         </div>
-
-        {/* <div className="flex justify-end gap-2">
-          <button
-            onClick={() => scroll("left")}
-            aria-label="Previous testimonial"
-            className="flex items-center justify-center w-9 h-9 rounded-full border border-brand-red text-brand-red hover:bg-brand-red hover:text-white transition-colors"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            >
-              <path d="M15 18l-6-6 6-6" />
-            </svg>
-          </button>
-          <button
-            onClick={() => scroll("right")}
-            aria-label="Next testimonial"
-            className="flex items-center justify-center w-9 h-9 rounded-full border border-brand-red text-brand-red hover:bg-brand-red hover:text-white transition-colors"
-          >
-            <svg
-              width="16"
-              height="16"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            >
-              <path d="M9 18l6-6-6-6" />
-            </svg>
-          </button>
-        </div> */}
 
         <div className="flex justify-end gap-2">
           <button

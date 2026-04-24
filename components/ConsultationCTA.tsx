@@ -1,6 +1,6 @@
 export function ConsultationCTA() {
   return (
-    <section className="py-16 px-[89px] bg-[#f9f9f9]">
+    <section className="py-[20px] px-[89px] bg-[#f9f9f9]">
       <div className="font-nunito mx-auto max-w-6xl rounded-md bg-brand-plum py-14 px-8 flex flex-col items-center gap-6 text-center">
         <p className="font-nunito text-white text-base md:text-lg leading-relaxed">
           <span className="md:hidden">
