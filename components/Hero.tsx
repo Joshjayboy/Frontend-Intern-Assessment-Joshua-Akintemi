@@ -17,10 +17,10 @@ export function Hero() {
           WHAT WE DO
         </span>
 
-        <h1 className="mt-6 text-4xl md:text-5xl lg:text-6xl font-semibold text-white">
+        <h1 className="font-nunito mt-6 text-4xl md:text-5xl lg:text-6xl font-semibold text-white">
           Training and Development
         </h1>
-        <p className="mx-auto mt-5 max-w-full text-base md:text-lg text-white/85">
+        <p className="font-nunito-sans mx-auto mt-5 max-w-full text-base md:text-lg text-white/85">
           Our comprehensive range of programs and resources is designed to
           enhance skills, broaden knowledge, and propel careers forward in
           today's ever-evolving landscape.
