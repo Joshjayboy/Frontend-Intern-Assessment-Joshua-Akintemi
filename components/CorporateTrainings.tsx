@@ -10,9 +10,6 @@ const trainings = [
 
 export function CorporateTrainings() {
   return (
-    // <section className="py-16 px-4 bg-white">
-    //   <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-10">
-
     <section className="py-16 bg-white">
       <div className="mx-auto max-w-7xl px-4 md:px-8 flex flex-col md:flex-row items-center gap-10">
         <div className="flex-1 flex flex-col gap-5">
