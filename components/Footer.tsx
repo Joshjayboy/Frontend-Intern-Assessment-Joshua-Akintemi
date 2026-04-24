@@ -37,8 +37,8 @@ export function Footer() {
   return (
     <footer className="bg-white">
       {/* CTA Banner */}
-      <div className="bg-[#1D0617] px-8 py-8">
-        <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div className="bg-[#1D0617] py-8">
+        <div className="mx-auto max-w-7xl px-4 md:px-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <div>
             <p className="text-sm text-white/70">
               Ready to be a part of something extraordinary?
@@ -59,8 +59,8 @@ export function Footer() {
       <hr className="border-[#f9f9f9]" />
 
       {/* Main Footer */}
-      <div className="bg-[#11040E] px-8 py-12">
-        <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div className="bg-[#11040E] py-12">
+        <div className="mx-auto max-w-7xl px-4 md:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Logo & Description */}
 
           <div className="flex flex-col gap-5">
@@ -71,12 +71,13 @@ export function Footer() {
               height={48}
               className="w-auto h-12 self-start"
             />
-            <p className="text-sm text-white/70 leading-relaxed">
+            <p className="font-nunito font-[400] text-[16px] leading-[150%] tracking-[3%] text-[#F8F8F8]">
               Tobams Group is an innovative consultancy firm reshaping the
               future of tech talent development in Africa, specializing in
               talent acquisition, internships, and skill development with a
               global perspective.
             </p>
+
             <div className="flex items-center gap-3">
               <a
                 href="#"
@@ -135,11 +136,16 @@ export function Footer() {
 
           {/* What We Do */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold text-white">What We Do</h4>
+            <h4 className="font-nunito font-[700] text-[20px] leading-[100%] tracking-[0%] text-white">
+              What We Do
+            </h4>
             <ul className="flex flex-col gap-2">
               {whatWeDo.map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-sm text-white transition-colors">
+                  <a
+                    href="#"
+                    className="font-nunito font-[400] text-[16px] leading-[150%] tracking-[3%] text-white transition-colors"
+                  >
                     {item}
                   </a>
                 </li>
@@ -149,11 +155,16 @@ export function Footer() {
 
           {/* Company */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold text-white">Company</h4>
+            <h4 className="font-nunito font-[700] text-[20px] leading-[100%] tracking-[0%] text-white">
+              Company
+            </h4>
             <ul className="flex flex-col gap-2">
               {company.map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-sm text-white transition-colors">
+                  <a
+                    href="#"
+                    className="font-nunito font-[400] text-[16px] leading-[150%] tracking-[3%] text-white transition-colors"
+                  >
                     {item}
                   </a>
                 </li>
@@ -163,11 +174,16 @@ export function Footer() {
 
           {/* Solution */}
           <div className="flex flex-col gap-4">
-            <h4 className="text-sm font-semibold text-white">Solution</h4>
+            <h4 className="font-nunito font-[700] text-[20px] leading-[100%] tracking-[0%] text-white">
+              Solution
+            </h4>
             <ul className="flex flex-col gap-2">
               {solution.map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-sm text-white transition-colors">
+                  <a
+                    href="#"
+                    className="font-nunito font-[400] text-[16px] leading-[150%] tracking-[3%] text-white transition-colors"
+                  >
                     {item}
                   </a>
                 </li>
@@ -177,94 +193,96 @@ export function Footer() {
         </div>
 
         {/* Registered Offices */}
-
-        <div className="mx-auto max-w-6xl mt-12 rounded-lg bg-[#1f131c] p-6">
-          <div className="flex flex-col md:flex-row gap-8">
-            {/* Registered Offices */}
-            <div className="flex-1 flex flex-col gap-4">
-              <h4 className="text-sm font-semibold text-white">
-                Registered Offices
-              </h4>
-              <div className="flex flex-col md:flex-row gap-8">
-                <div className="flex flex-col gap-1">
-                  <p className="text-sm font-medium text-brand-red">
-                    United Kingdom
-                  </p>
-                  <p className="text-sm text-white/70">
-                    07451196 (Registered by Company House)
-                  </p>
-                  <p className="text-sm text-white/70">
-                    Vine Cottages, 215 North Street, Romford, Essex, United
-                    Kingdom, RM1 4QA
-                  </p>
-                </div>
-                <div className="hidden md:block w-px bg-white/10" />
-
-                <div className="flex flex-col gap-1">
-                  <p className="text-sm font-medium text-brand-red">Nigeria</p>
-                  <p className="text-sm text-white/70">
-                    RC 1048722 (Registered by the Corporate Affairs Commission)
-                  </p>
-                  <p className="text-sm text-white/70">
-                    4, Muaz Close, Angwar-Rimi
-                  </p>
+        <div className="mx-auto max-w-7xl mt-12 px-4 md:px-8">
+          <div className="rounded-lg bg-[#1f131c] p-6">
+            <div className="flex flex-col md:flex-row gap-8">
+              {/* Registered Offices */}
+              <div className="flex-1 flex flex-col gap-4">
+                <h4 className="text-sm font-semibold text-white">
+                  Registered Offices
+                </h4>
+                <div className="flex flex-col md:flex-row gap-8">
+                  <div className="flex flex-col gap-1">
+                    <p className="text-sm font-medium text-brand-red">
+                      United Kingdom
+                    </p>
+                    <p className="text-sm text-white/70">
+                      07451196 (Registered by Company House)
+                    </p>
+                    <p className="text-sm text-white/70">
+                      Vine Cottages, 215 North Street, Romford, Essex, United
+                      Kingdom, RM1 4QA
+                    </p>
+                  </div>
+                  <div className="hidden md:block w-px bg-white/10" />
+                  <div className="flex flex-col gap-1">
+                    <p className="text-sm font-medium text-brand-red">
+                      Nigeria
+                    </p>
+                    <p className="text-sm text-white/70">
+                      RC 1048722 (Registered by the Corporate Affairs
+                      Commission)
+                    </p>
+                    <p className="text-sm text-white/70">
+                      4, Muaz Close, Angwar-Rimi
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            {/* Divider */}
-            <div className="hidden md:block w-px bg-white/10" />
+              {/* Divider */}
+              <div className="hidden md:block w-px bg-white/10" />
 
-            {/* Contact Information */}
-            <div className="flex flex-col gap-3 md:w-64">
-              <h4 className="text-sm font-semibold text-white">
-                Contact Information
-              </h4>
-              <a
-                href="mailto:theteam@tobamsgroup.com"
-                className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="16"
-                  viewBox="0 0 20 16"
-                  fill="none"
+              {/* Contact Information */}
+              <div className="flex flex-col gap-3 md:w-64">
+                <h4 className="text-sm font-semibold text-white">
+                  Contact Information
+                </h4>
+                <a
+                  href="mailto:theteam@tobamsgroup.com"
+                  className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
                 >
-                  <path
-                    d="M2 16C1.45 16 0.979002 15.804 0.587002 15.412C0.195002 15.02 -0.000664969 14.5493 1.69779e-06 14V2C1.69779e-06 1.45 0.196002 0.979002 0.588002 0.587002C0.980002 0.195002 1.45067 -0.000664969 2 1.69779e-06H18C18.55 1.69779e-06 19.021 0.196001 19.413 0.588001C19.805 0.980001 20.0007 1.45067 20 2V14C20 14.55 19.804 15.021 19.412 15.413C19.02 15.805 18.5493 16.0007 18 16H2ZM10 9L18 4V2L10 7L2 2V4L10 9Z"
-                    fill="#EF4353"
-                  />
-                </svg>
-                theteam@tobamsgroup.com
-              </a>
-              <a
-                href="tel:+447886600748"
-                className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="16"
+                    viewBox="0 0 20 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M2 16C1.45 16 0.979002 15.804 0.587002 15.412C0.195002 15.02 -0.000664969 14.5493 1.69779e-06 14V2C1.69779e-06 1.45 0.196002 0.979002 0.588002 0.587002C0.980002 0.195002 1.45067 -0.000664969 2 1.69779e-06H18C18.55 1.69779e-06 19.021 0.196001 19.413 0.588001C19.805 0.980001 20.0007 1.45067 20 2V14C20 14.55 19.804 15.021 19.412 15.413C19.02 15.805 18.5493 16.0007 18 16H2ZM10 9L18 4V2L10 7L2 2V4L10 9Z"
+                      fill="#EF4353"
+                    />
+                  </svg>
+                  theteam@tobamsgroup.com
+                </a>
+                <a
+                  href="tel:+447886600748"
+                  className="flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
                 >
-                  <path
-                    d="M16.2037 12.25L13.6637 11.96C13.365 11.9249 13.0623 11.958 12.7782 12.0567C12.4942 12.1554 12.2362 12.3173 12.0237 12.53L10.1837 14.37C7.34486 12.9262 5.03745 10.6188 3.59367 7.78L5.44367 5.93C5.87367 5.5 6.08367 4.9 6.01367 4.29L5.72367 1.77C5.66698 1.28218 5.43287 0.832237 5.06591 0.505849C4.69895 0.17946 4.22478 -0.000582255 3.73367 1.41469e-06H2.00367C0.873674 1.41469e-06 -0.0663265 0.940001 0.00367348 2.07C0.533673 10.61 7.36367 17.43 15.8937 17.96C17.0237 18.03 17.9637 17.09 17.9637 15.96V14.23C17.9737 13.22 17.2137 12.37 16.2037 12.25Z"
-                    fill="#EF4353"
-                  />
-                </svg>
-                +447886600748
-              </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                  >
+                    <path
+                      d="M16.2037 12.25L13.6637 11.96C13.365 11.9249 13.0623 11.958 12.7782 12.0567C12.4942 12.1554 12.2362 12.3173 12.0237 12.53L10.1837 14.37C7.34486 12.9262 5.03745 10.6188 3.59367 7.78L5.44367 5.93C5.87367 5.5 6.08367 4.9 6.01367 4.29L5.72367 1.77C5.66698 1.28218 5.43287 0.832237 5.06591 0.505849C4.69895 0.17946 4.22478 -0.000582255 3.73367 1.41469e-06H2.00367C0.873674 1.41469e-06 -0.0663265 0.940001 0.00367348 2.07C0.533673 10.61 7.36367 17.43 15.8937 17.96C17.0237 18.03 17.9637 17.09 17.9637 15.96V14.23C17.9737 13.22 17.2137 12.37 16.2037 12.25Z"
+                      fill="#EF4353"
+                    />
+                  </svg>
+                  +447886600748
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
-
-      <div className="bg-[#11040E] px-8">
-        <div className="mx-auto max-w-6xl">
+      <div className="bg-[#11040E]">
+        <div className="mx-auto max-w-7xl px-4 md:px-8">
           <hr className="border-white/10 mb-4" />
           <div className="flex flex-col md:flex-row py-[20px] items-center justify-between gap-3">
             <p className="text-sm text-white/60">
