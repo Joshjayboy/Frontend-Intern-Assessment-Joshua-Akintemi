@@ -11,13 +11,13 @@ const benefits = [
 
 export function CapacityDevelopment() {
   return (
-    <section className="py-16 px-4 bg-white">
-      <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-center gap-10">
+    <section className="py-16 bg-white">
+      <div className="mx-auto max-w-7xl px-4 md:px-8 flex flex-col md:flex-row items-center gap-10">
         <div className="flex-1 flex flex-col gap-5">
-          <h2 className="text-2xl md:text-3xl font-semibold text-foreground">
+          <h2 className="text-2xl md:text-3xl font-semibold text-foreground font-nunito">
             Capacity Development
           </h2>
-          <p className="text-sm text-foreground/70 leading-relaxed">
+          <p className="text-sm text-foreground/70 leading-relaxed font-nunito-sans">
             At Tobams Group, we empower individuals and organizations through
             tailored training programs, expert-led workshops, and personalized
             mentorship. We are committed to your success and growth. We are
