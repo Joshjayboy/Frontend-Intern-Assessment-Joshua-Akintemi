@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full min-h-[600px] flex items-center justify-center">
       <Image
         src="/hero.jpg"
         alt="Training and development background"
@@ -12,7 +12,7 @@ export function Hero() {
       />
       <div className="absolute inset-0 bg-black/70" />
 
-      <div className="relative mx-auto max-w-5xl px-4 py-20 md:py-28 text-center">
+      <div className="relative mx-auto max-w-5xl px-4 text-center">
         <span className="inline-flex items-center justify-center rounded-[100px] bg-[#221e1c] px-12 py-3 gap-[10px] text-xs tracking-widest text-white">
           WHAT WE DO
         </span>
