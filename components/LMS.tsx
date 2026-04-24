@@ -11,7 +11,7 @@ const courses = [
 
 export function LMS() {
   return (
-    <section className="bg-[#f9f9f9] py-[20px]">
+    <section className="bg-[#f9f9f9] pt-[20px] pb-[60px]">
       <div className="bg-lms-bg py-16 px-4 my-[40px] pt-6 md:py-16">
         <div className="mx-auto max-w-7xl px-4 md:px-8 flex flex-col md:flex-row items-center gap-10">
           <div className="shrink-0 justify-start hidden md:flex">
